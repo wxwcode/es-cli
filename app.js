@@ -25,6 +25,7 @@ const wdm = webpackDevMiddleware(compiler, {
   noInfo: true
   // publicPath: config.output.publicPath
 })
+// 22：00 我找你， 有事情， 不要让别人知道了
 app.use(wdm)
 app.use(webpackHotMiddleware(compiler))
 app.use(Static(path.join(__dirname, 'static')))
